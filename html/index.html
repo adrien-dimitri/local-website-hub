@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Website Hub</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Roboto, Arial, sans-serif;
             margin: 20px;
+            background-color: #1e1e1e;
         }
         h1 {
             text-align: center;
+            color: #fff;
         }
 
         .wrapper {
-            border: 5px solid #3498db;
+            border: 5px solid #222222;
             margin: auto;
-            width: 40%;
+            width: 300px;
             padding: 20px;
             display: flex;
             flex-direction: column;
-            background-color: #ecf0f1;
+            background-color: #1e1e1e;
+            color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -30,8 +36,8 @@
             flex: 1;
             padding: 15px;
             text-align: center;
-            background-color: #3498db;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s;
@@ -59,6 +65,26 @@
             overflow: hidden;
         }
 
+        #portainer:hover {
+            background-color: #3498db;
+        }
+
+        #hass:hover {
+            background-color: #3498db;
+        }
+
+        #grafana:hover {
+            background-color: #3366cc;
+        }
+
+        #prom:hover {
+            background-color: #a3382c;
+        }
+
+        #pihole:hover {
+            background-color: #000000;
+        }
+
 
     </style>
 </head>
@@ -73,7 +99,7 @@
         </div>
         <div class="box" id="hass" onclick="openLink(`http://192.168.1.21:8123`)">
             <div class="logo-container">
-                <img class="logo" src="https://avatars.githubusercontent.com/u/13844975?s=200&v=4" alt="Home Assistant Logo">
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg" alt="Home Assistant Logo">
             </div>
             <div class="name-container">Home Assistant</div>
         </div>
