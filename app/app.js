@@ -8,4 +8,4 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Hub!')
 });
 
-app.listen(port, () => console.log('Hub server listening at http://localhost:${port}'));
+app.listen(port, () => console.log(`Hub server listening at http://localhost:${port}`));
