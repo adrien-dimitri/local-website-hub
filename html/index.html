@@ -13,58 +13,12 @@
 <body>
     <h1>Local Website Hub</h1>
     <div class="wrapper">
-        <div class="box" id="portainer" onclick="openLink(`https://192.168.1.21:9443`)">
-            <div class="logo-container">
-                <img class="logo" src="https://cdn.worldvectorlogo.com/logos/portainer.svg" alt="Portainer Logo">
-            </div>
-            <div class="name-container">Portainer</div>
-            <div class="port-container">
-                <div>9443</div>
-            </div>
-        </div>
-        <div class="box" id="hass" onclick="openLink(`http://192.168.1.21:8123`)">
-            <div class="logo-container">
-                <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/4/49/Home_Assistant_logo_%282023%29.svg" alt="Home Assistant Logo">
-            </div>
-            <div class="name-container">Home Assistant</div>
-            <div class="port-container">
-                <div>8123</div>
-            </div>
-        </div>
-        <div class="box" id="grafana" onclick="openLink(`http://192.168.1.21:3000`)">
-            <div class="logo-container">
-                <img class="logo" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/grafana_logo_icon_171048.png" alt="Grafana Logo">
-            </div>
-            <div class="name-container">Grafana</div>
-            <div class="port-container">
-                <div>3000</div>
-            </div>
-        </div>
-        <div class="box" id="prom" onclick="openLink(`http://192.168.1.21:9090`)">
-            <div class="logo-container">
-                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/2066px-Prometheus_software_logo.svg.png" alt="Prometheus Logo">
-            </div>
-            <div class="name-container">Prometheus</div>
-            <div class="port-container">
-                <div>9090</div>
-            </div>
-        </div>
-        <div class="box" id="pihole" onclick="openLink(`http://192.168.1.21/admin/`)">
-            <div class="logo-container">
-                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png" alt="Pi-Hole Logo">
-            </div>
-            <div class="name-container">Pi-Hole</div>
-            <div class="port-container">
-                <div>admin</div>
-            </div>
-        </div>
-        <!-- <div class="box" onclick="openLink(`http://192.168.1.21:8123`)">Site 2</div> -->
+        <label for="ipAddress">Enter IP Address:</label>
+        <input type="text" id="ipAddress" placeholder="e.g., 192.168.1.21">
+        <button id="updateButton" onclick="updateIPAddress()">Update IP Address</button>
     </div>
+    
 
-    <script>
-        function openLink(url) {
-            window.open(url, '_blank');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
