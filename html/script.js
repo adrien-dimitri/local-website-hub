@@ -1,5 +1,5 @@
 const ipAddressInput = document.getElementById("ipAddress");
-let ipAddress = ipAddressInput.value.trim() || "192.168.1.21"; // Default IP address
+let ipAddress = ipAddressInput.value.trim() || "192.168.2.57"; // Default IP address
 
 const services = [
     {
